@@ -11,9 +11,6 @@ require('./conn');
 
 // middlewares 
 app.use(express.json());
-app.get('/',(req,res)=>{
-    res.end("hey docker"); 
-})
 
 // requiring router 
 app.use(require('./router'));
